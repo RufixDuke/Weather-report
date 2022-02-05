@@ -18,24 +18,24 @@ function weatherFetch(query) {
 
             displaySpace.innerHTML = '';
 
-            res.map((el) => {
-                var space = `<div>
+
+            var space = `<div>
                                 <h2>Details</h2>
-                                <p>Temp: ${el.main.temp}</p>
-                                <p>Temp Max: ${el.main.temp_max}</p>
-                                <p>Temp Min: ${el.main.temp_min}</p>
-                                <p>Humidity: ${el.main.humidity}</p>
-                                <p>Pressure: ${el.main.pressure}</p>
-                                <p>Wind: ${el.wind.speed}</p>
-                                <p>Weather: ${el.weather.main}</p>
+                                <p>Temp: ${res.main.temp}</p>
+                                <p>Temp Max: ${res.main.temp_max}</p>
+                                <p>Temp Min: ${res.main.temp_min}</p>
+                                <p>Humidity: ${res.main.humidity}</p>
+                                <p>Pressure: ${res.main.pressure}</p>
+                                <p>Wind: ${res.wind.speed}</p>
+                                <p>Weather: ${res.weather.main}</p>
                             </div>`;
 
 
-                var text = document.createElement("div");
-                text.innerHTML = space;
-                displaySpace.appendChild(text);
-            }
-            )
+            var text = document.createElement("div");
+            text.innerHTML = space;
+            displaySpace.appendChild(text);
+
+
         })
         .catch(error => {
             console.log(error)
