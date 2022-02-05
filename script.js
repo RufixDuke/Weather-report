@@ -31,10 +31,19 @@ function weatherFetch(query) {
                                 <p>Wind: ${res.wind.speed}</p>
                             </div>`;
 
+            var location = `<div class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>${query}</span>
+                            </div>`
 
-            var text = document.createElement("div");
-            text.innerHTML = space;
-            displaySpace.appendChild(text);
+            var text1 = document.createElement("div");
+
+
+            text1.innerHTML = space + location;
+            // text2.innerHTML = location;
+
+            displaySpace.appendChild(text1);
+
 
 
         })
