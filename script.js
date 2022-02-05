@@ -11,7 +11,7 @@ btn.addEventListener('click', () => {
 // speed.playbackRate = 0.4;
 
 function weatherFetch(query) {
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${query}&appid=de91c982f0db3cc64f7ae493e2a70b93`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${query}&appid=de91c982f0db3cc64f7ae493e2a70b93`)
         .then(result => {
             return result.json();
         })
