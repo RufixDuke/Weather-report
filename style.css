@@ -92,6 +92,7 @@
     align-items: center;
     justify-content: space-between;
 }
+
 #upper{
     display: flex;
 }
@@ -107,6 +108,7 @@
 #lower p {
   font-size: 20px;
   text-transform: capitalize;
+  font-weight: bold;
 }
 
 .info {
