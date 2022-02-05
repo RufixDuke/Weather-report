@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container {
+    background-color: dodgerblue;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.wrapper {
+    position: absolute;
+    top: 60px;
+}
+
+label {
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.inputs {
+    padding: 6px 12px;
+    border: 0;
+    border-radius: 3px;
+}
+
+.inputs {
+    outline: 0;
+}
+
+button {
+    padding: 6px 10px;
+    position: relative;
+    left: -39px;
+    border-radius: 0 3px 3px 0;
+    border: 0;
+    background-color: orange;
+}
+
+button i {
+    color: white;
+    font-size: 14px;
+}
+
+button i:active {
+    transform: scale(0.98);
+}
